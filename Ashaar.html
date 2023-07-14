@@ -1,0 +1,344 @@
+<html lang="en">
+<head>
+
+    <link rel="icon" href="./imges/thick.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote</title>
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!---javascript link-->
+    <script src="style.js"></script>
+
+    <!---ion-icon link-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        
+        <!-- this part belongs to the header  -->
+
+        <header>
+            <div class="logo"><ion-icon name="arrow-back-outline" style="font-size: 30px;
+                padding: 5px;color: #fff;border: none;border-radius: 5px;background-color: #800080;" onclick="window.history.back();"></ion-icon></div>
+            <div class="bar"><ion-icon name="menu-outline" title="bar" onclick="inc();"></ion-icon></div>
+        </header>
+
+        <!-- this belongs to the nav-bar part  -->
+
+        <div class="nav-bar" id="nav-bar">
+
+
+            <div class="logo">
+                <img src="./imges/logo.jpg" alt="">
+                <ion-icon name="close-outline" onclick="dec();"></ion-icon>
+            </div>
+
+
+            <div class="links">
+                <ul>
+                    <li><a href="./index.html">منو </a><ion-icon name="home-outline"></ion-icon></li>
+                    <li><a href="./index.html#about">در باره</a><ion-icon name="people-outline"></ion-icon></li>
+                    <li><a href="./index.html#comment">ارایه نظر</a><ion-icon name="chatbubble-ellipses-outline"></ion-icon></li>
+                    <li><a href="#" onclick="showPoet();">شاعران</a><ion-icon name="book-outline"></ion-icon></li>
+                    <div class="hiddenPoet" id="hiddenPoet">
+                        <a href="#mowlana" onclick="closeBar();">مولانا</a>
+                        <a href="#sadi"onclick="closeBar();">سعدی</a>
+                        <a href="#hafi"onclick="closeBar();">حافظ</a>
+                    </div>
+                    <li><a href="./index.html#contact">ارتباط با ما</a><ion-icon name="call-outline"></ion-icon></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <!-- this part belongs to the poet section  -->
+
+        <div class="poet">
+            <class class="main-info">
+                <div style="display: flex; justify-content: flex-end; align-items: center; height: 40px; width: 100%;"><h2 style="  background-color: #800080; padding: 5px 20px; color: white; border-radius: 5px;">زندگینامه مولانا</h2></div>
+
+                <!-- this information belongs to the mowlana  -->
+
+                <div  id="mowlana" style="display: flex; justify-content: flex-end; align-items: center;text-align: justify;">
+                    <p> مولانا جلال الدین محمد بلخی یا مولوی یک تن از شاعران قرن هفتم هجری قمری می باشد که در دوران حیات به وی لقب جلال الدین را داده بود و در قرن های بعدی لقب مولانا را به خود گرفته. نفوذ مولانا بیشتر از مرزهای ملی بوده که افغانها , ایرانیان , تاجکی ها , ترکی ها و یونانیان از میراث وی استفاده می کنند مولانا بلاخره در سال 678 هجری قمری در سن 68 سالگی وفات <span style=" display: flex; justify-content: end;">نمود و در قونیه دفن گردید </span> </p>
+                </div>
+                <img src="./imges/m1.jpg">
+                <div style="display: flex; justify-content: center; width: 100%;">
+                        <h2 style="margin-top: 80px ; padding:5px 20px; background-color: #800080; position: relative; right: 0; color: #fff; border-radius: 5px; text-align: right;" id="mashar"> اشعار مولانا </h2>
+                </div>
+
+                <!-- this belongs to the mowlana shirs  -->
+
+                <div class="ashar">
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> دنیا همه هیچ و کار دنیا همه هیچ <br> ای هیچ برای هیچ بر هیچ مپیچ <br> دانی که از آدمی چه ماند پس مرگ <br> عشق است و محبت است و باقی همه هیچ </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p>شاه خوبانی و منظور گدایان شده ای <br> قدر این مرتبه نشناخته ای یعنی چه ؟</p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> دیگران چون بروند از دل بروند <br> تو چنان در دل من رفته که جان در بدنی  </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> صورت زیبا نمی آید به کار  <br> حرفی از معنی اگر داری بیار </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> مکانم لامکان باشد نشانم بی نشان باشد <br> نه تن باشد نه جان باشد که من از جان جانانم </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> بیا تا قدر یکدیگر بدانیم <br>  تا که ناگه ز یکدیگر نمانیم </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> خلق را تقلید شان بر باد داد <br> ای دو صد لعنت بر این تقلید </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> ... حقا که غمت <br>  از تو وفادار تر است  </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> بعد ناامیدی بسی امید هاست <br> از پس ظلمت بسی خورشید هاست </p>
+                    </div>
+                    <div> <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> در هوایت بی قرارم روز و شب<br> سر ز پایت بر ندارم روز و شب  </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> در این خاک در این مزرعه پاک<br> به جز مهر به عشق دیگر بذر نکاریم  </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> اشتیاقی که به دیدار تو دارد دل من <br> دل من داند و من دانم و دل داند و من </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> آنکه بی باده جان مرا مست کند کجاست ؟ </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> صد نامه فرستادم و صد ره نشان دادم <br> یا ره نمی آیی یا نامه نمی خانی </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> مایم سر مست و سر گردان فارغ ز کار دیگران <br> عالم اگر بر هم رود عشق تو را بادا بقا </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> از دوست به یادگار دردی دارم <br> کان درد به صد درمان ندهم </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> دل مرنجان که از هر دل به خدا راهی است  </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt=""> 
+                        <p>  : آن شب که دلی  بود <br> به میخانه نشستیم <br> آن توبه صد ساله شکستیم <br> از اتش دوزخ نهراسیم  <br> که ان شب <br> ما توبه شکستیم <br> ... ولی دل نشکستیم </p>
+                    </div>
+                </div>
+
+                <!-- this part belongs to the sadi ashar  -->
+
+                <div style="display: flex; justify-content: flex-end; align-items: center; height: 40px; width: 100%;"><h2 style="  background-color: #800080; padding: 5px 20px; color: white; border-radius: 5px;" id="sadi" >زندگینامه سعدی</h2></div>
+
+                <div style="display: flex; justify-content: flex-end; align-items: center;text-align: justify;">
+                    <p style="text-align: right;"> نامش ابو محمد مشرف الدین مصلح که سعدی تخلص میکند شاعر و نویسینده بزرگ  قرن هفتم هجری میباشد. وی در بین سال های 600 تا 615 هجری در شیراز - ایران متولد شده ولی تاریخ دقیق ان معلوم نیست. زبان مادری وی فارسی میباشد که دو اثر مشهور به نام های گلستان و بوستان دارد که به نثر مسجع نوشته شده است . سعدی شیرازی بلاخره در سال 690 هجری قمری وفات نمود.</p>
+
+                </div>
+                <img src="./imges/a-2618.jpg" alt="">
+
+                <div style="display: flex; justify-content: center; width: 100%;">
+                    <h2 style="margin-top: 80px ; padding:5px 20px; background-color: #800080; position: relative; right: 0; color: #fff; border-radius: 5px; text-align: right;" id="sashar"> اشعار سعدی</h2>
+                </div>
+
+                <!-- this belongs to the sadi shirs  -->
+
+                <div class="ashar">
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> گهی بر درد بی درمان میگیریم <br> گهی بر حال بی سامان میخندم </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> گفته بودم چو بیایی غم دل با تو گویم <br> چه بگویم که غم از دل میرود چون تو بیایی </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> گل نسبتی ندارد با روی دل فریبت <br> تو در میان گل ها چون میان خاری </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> پیام دادم و گفتم <br> بیا و خوشم میدار <br> جواب دادی و گفتی <br> که من خوشم بی تو </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> چنان به موی تو آشفته ام به بوی تو مست <br> که نیستم خبر از هر چه در عالم هست   </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> سخن ها دارم از دست تو در دل <br> ولیکن در حضورت بی زبانم </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> بلبلان از بوی گل مستند ما از روی دوست <br> دیگران از ساغر و ساقی ما از یاد دوست </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> ... گفتی نظر خطاست<br> تو دل میبری رواست ...؟</p>
+                    </div>
+                    <div> <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> مرا به هیچ بدادی و من هنوز بر آنم <br> که از وجود موی به عالمی نفروشم </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> تا رنج تحمل نکنی گنج نبینی <br> تا شب نرود صبح پدیدار نشود </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                       <p> دیدار یار غایب دانی چه ذوقی دارد ؟ <br> ابری که در بیابان بر تشنه ای ببارد </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> من چرا دل به تو دادم که دلم می شکنی ؟ </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> من انم که حلال از حرام نشناسم <br> شراب با تو حلالست  و آب بی تو حرام</p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> همه بر سر زبانند <br> و تو در میانی جانی </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                       <p> چه جرم رفت که با ما سخن نمی گویی ؟ <br> جنایت از طرف ماست یا تو بد خویی ! ؟ </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> نه چندان درشتی کن که از تو سیر شوند <br> نه چندان نرمی کن که بر تو دلیر شوند </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt=""> 
+                       <p> هر که عیب دگران <br> پیش تو آورد و شمرد <br> بی گمان عیب تو <br> پیش دیگران خواهد برد </p>
+                    </div>
+                </div>
+
+                <!-- this belongs to the hafi shirs  -->
+
+                <div style="display: flex; justify-content: flex-end; align-items: center; height: 40px; width: 100%;"><h2 style="  background-color: #800080; padding: 5px 20px; color: white; border-radius: 5px;" id="hafi" >زندگینامه حافظ</h2></div>
+
+                <!-- this part belongs to the life of hafi  -->
+
+                <div style="display: flex; justify-content: flex-end; align-items: center;text-align: justify;">
+                    <p style="text-align: right;">  خواجه شمس الدین محمد بن بهاالدین محمد حافظ شیرازی یکی از شاعران فارسی زبان می باشد وی در سال 726 هجری قمری در شیراز ایران چشم به جهان گشود. اشعار وی معمولا غزل بوده ولی اشعار عارفانه هم سروده هست .حافظ در زمینه شعر از آثار مولانا و سعدی پیروی کرده است. حافظ شیرازی بلاخره در سال 792 هجری قمری وفات نمود  </p> 
+                </div>
+
+                <img src="./imges/a-1259.jpg" alt="">
+
+                <!-- this belongs to the title  -->
+
+                <div style="display: flex; justify-content: center; width: 100%;" id="hashar">
+                    <h2 style="margin-top: 80px ; padding:5px 20px; background-color: #800080; position: relative; right: 0; color: #fff; border-radius: 5px; text-align: right;"> اشعار حافظ</h2>
+                </div>
+
+                <!-- this part belongs to the hafi ashar  -->
+
+                <div class="ashar">
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> جز نقش تو در نظر نیامد ما را <br> جز کوی تو رهگذر نیامد ما را <br> خواب از هوش امد همه از عهدت <br> حقا که به چشم نیامد ما را </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> من اکر نیکم وگر بد تو برو خود باش <br> هر کسی ان درود عاقبت کار گشت </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> خیال روی تو در هر طریق همراه ماست  <br> نسیم موی تو پیوند اگه جان ماست <br> به رغم مدعیانی که منع عشق کند <br> جمال چهره تو حجت موجه ماست</p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> صنما غم عشق تو چه تدبیر کنم<br> تا به کی در غم تو نامه شبگیر کنم <br> دل دیوانه از ان شده که نصیحت شنود <br> مرگش هم ز سر زلف تو زنجیر کنم </p>
+                    </div>
+                    <div> <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> به قبرستان گذر کردم کم و بیش <br> بدیدم قبر دولتمند و درویش <br> نه درویش در خاک بی کفن رفته <br> نه دولتمند برده یک کفن بیش </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> دردم از یار است و درمان نیز هم <br> دل فدای او شد و جان نیز هم </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> روی تو مگر اینه لطف الهیست <br> حقا که چنیس است و در این روی و ریا نیست</p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> من هرگز از بیگانگان ننالم <br> که هرچه با ما کرد آشنا کرد </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> به مژگان سیه کردی هزاران رخنه دودینم <br> بیا کز چشم خمارت هزاران درد برچینم</p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> در ره منزل لیلی که خطرهاست در آن <br> شرط اول قدم انست که مجنون باشی </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> ...دل بی تو به جان آمد وقت است که باز آیی</p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> هر آنکه جانب اهل خدا نگه دارد <br> خداش در همه حال از بلا نگه دارد  </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt=""> 
+                        <p> چه خوش صید دلم کردی بنازم چشم مستت را <br> که کس مرغان وحشی را از این خوشتر نمی گیرد </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> دل بی تو به جان آمد <br> وقت است که باز آیی </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> مباش در پی آزار و هر چه خواهی کن <br> که در شریعت ما غیر ازین گناهی نیست </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> میل من سوی وصال و قصد او سوی فراق <br> ترک کام گرفتم تا براید گام درست </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> ای غایب از نظر به خدا میسپارمت <br> جانم بسوختی و به دل دوست دارمت </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> فکر بلبل همه ان است که گل شد یارش <br> گل در اندیشه که چون عشوه کند در کارش </p>
+                    </div>
+                    <div>
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> اگر ان ترک شیرازی به دست ارد دل ما را <br> به خال هندویش بخشم سمرقند و بخارا را  </p>
+                    </div>
+                    <div> 
+                        <img src="./imges/367-3673947_quotation-quotation-marks-clipart.png" alt="">
+                        <p> ... هوا خواه تو ام جانا و میدانم که میدانی </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

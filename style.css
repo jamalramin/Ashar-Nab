@@ -1,0 +1,465 @@
+/* google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Vazirmatn:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.container{
+    position: relative;
+}
+
+.container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    font-family: 'Noto Nastaliq Urdu', serif;
+
+}
+
+.container header .logo img{
+    height: 50px;
+    width: 50px;
+    mix-blend-mode:multiply;
+}
+
+.container header .bar ion-icon , .container header ion-icon{
+    font-size: 30px;
+    padding: 5px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #800080;
+}
+
+/* this part belongs to the nav bar section  */
+
+.container .nav-bar {
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    height:0%;
+    width:100%;
+    border: none;
+    background-color: #fff;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.container .nav-bar .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding: 10px 30px;
+}
+
+.container .nav-bar .logo ion-icon{
+    font-size: 30px;
+    color: #fff;
+    background-color: #800080;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container .nav-bar .logo img {
+    height: 50px;
+    width: 50px;
+    mix-blend-mode: multiply;
+}
+
+.container .nav-bar .links ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin:30px 0;
+    text-align: center;
+}
+
+.container .nav-bar .links ul li a{
+    text-decoration: none;
+    margin: 0 30px;
+    color: #000;
+}
+
+.container .nav-bar .links ul li ion-icon{
+    font-size: 25px;
+    color: #000;
+}
+
+.container .nav-bar .links ul .hiddenPoet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+.container .nav-bar .links ul .hiddenPoet a{
+    color: #1872f2;
+    margin: 5px 0;
+    text-decoration: none;
+}
+.container .nav-bar .links ul .hiddenPoet.ramin{
+    display: flex;
+
+}
+
+/* this part belongs to the content section  */
+
+.container .content {
+    text-align: center;
+    font-size: 15px;
+    /* font-family:"Noto Nastaliq Urdu"; */
+    padding:10px 50px 0px;
+}
+
+.container .content h2{
+    font-size: 27px;
+}
+
+/* this belongs to the about section  */
+
+.container .about{
+    display: flex;
+    flex-direction: column;
+    background-color: #800080;
+    padding: 80px 34px 50px;
+    width: 100%;
+    clip-path: polygon(100% 100%, 0% 100% , 0.00% 26.47%, 2.22% 26.51%, 4.44% 26.46%, 6.67% 26.32%, 8.89% 26.10%, 11.11% 25.80%, 13.33% 25.42%, 15.56% 24.96%, 17.78% 24.43%, 20.00% 23.84%, 22.22% 23.19%, 24.44% 22.48%, 26.67% 21.73%, 28.89% 20.93%, 31.11% 20.11%, 33.33% 19.26%, 35.56% 18.39%, 37.78% 17.52%, 40.00% 16.65%, 42.22% 15.78%, 44.44% 14.93%, 46.67% 14.11%, 48.89% 13.32%, 51.11% 12.57%, 53.33% 11.86%, 55.56% 11.22%, 57.78% 10.63%, 60.00% 10.11%, 62.22% 9.66%, 64.44% 9.28%, 66.67% 8.98%, 68.89% 8.77%, 71.11% 8.64%, 73.33% 8.59%, 75.56% 8.63%, 77.78% 8.76%, 80.00% 8.97%, 82.22% 9.26%, 84.44% 9.63%, 86.67% 10.07%, 88.89% 10.59%, 91.11% 11.17%, 93.33% 11.82%, 95.56% 12.52%, 97.78% 13.26%, 100.00% 14.05%);
+}
+
+.container .about h2{
+    padding:0 0 20px;
+    color: #fff;
+    text-align: right;
+}
+
+.container .about p{
+    line-height: 25px;
+    color: #fff;
+    text-align: justify;
+    text-align: right;
+}
+
+.container .about .poets-pics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .about .poets-pics img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin:20px 5px;
+    transition-duration: 0.3s;
+}
+
+.container .about .poets-pics img:hover{
+    transform: scale(0.95);
+}
+
+/* this belongs to the poet information  */
+
+.container .poets-main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #eee;
+}
+
+.container .poets-main-info div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 340px;
+    width: 80%;
+    margin: 40px 0;
+    background-color: #ffff;
+    border:none;
+    box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.1);
+}
+
+.container .poets-main-info div h2{
+    margin:14px  0 -20px 0 ;
+}
+
+.container .poets-main-info div .btns{
+    display: flex;
+    border: none;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow:none;
+}
+
+.container .poets-main-info div .btns button{
+    padding: 7px 17px;
+    margin: 0 20px;
+    height: 40px;
+    width: 90px;
+    border: 2px solid transparent;
+    background-color: #800080;
+    color: #fff;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border-radius: 3px;
+}
+
+.container .poets-main-info div .btns button:active,
+.container .poets-main-info div .btns button:hover  {
+    border: 2px solid black;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+.container .poets-main-info div .btns button a{
+    color: #000;
+    text-decoration: none;
+}
+
+.container .poets-main-info img{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+}
+
+.container .poets-main-info img:hover{
+    transform: scale(0.95);
+}
+
+/* this belongs to the comment section  */
+
+.container .comment {
+    height: 340px;
+    background-color: #800080;
+}
+
+.container .comment h2{
+    padding: 30px;
+    font-size: 19px;
+    text-align: right;
+    color: #fff;
+}
+
+.container .comment .comment-div {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.container .comment .comment-main input{
+    position: absolute;
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    transition-duration: 0.5s;
+    text-align: right;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.container .comment .comment-div .comment-main input:focus ~ label ,
+.container .comment .comment-div .comment-main input:valid ~ label{
+    top: -10px;
+}
+.container .comment .comment-main label{
+    pointer-events: none;
+    color: #fff;
+    position: absolute;
+    top:40%;
+    right: 5px;
+    transition-duration: 0.5s;
+}
+
+.container .comment .comment-div .comment-main{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    height: 50px;
+    background-color: transparent;
+    margin:8px 0;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+}
+
+/* this part belongs to the message section  */
+
+.container .message {
+    transform: scale(0);
+    position: absolute;
+    bottom: 250px;
+    height: 260px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .message h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.container .message img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+}
+
+/* this belongs to the footer section  */
+
+
+footer{
+    height: 200px;
+    position: relative;
+    /* bottom: 220px; */
+    padding:50px 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+}
+
+footer h2 {
+    font-size: 20px;
+    text-align: right;
+    color: #000;
+}
+
+footer ul div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li ion-icon{
+    margin:10px;
+    font-size:25px;
+}
+
+/* social media styles  */
+
+#facebook{
+    color: #1872f2;
+}
+
+#instagram {
+    color: rgb(206, 30, 206);
+}
+
+#youtube {
+    color: rgb(241, 46, 46);
+}
+
+#twetter {
+    color: #1da1f2;
+}
+
+
+/* this part belongs to the ashar section  */
+
+.container .poet{
+    background-color: #eee;
+    padding:50px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container .nav-bar .links ul .poet ul{
+    height:0;
+    background-color: red;
+    margin: 0;
+}
+
+.container .poet .main-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 30px;
+
+}
+
+.container .poet .main-info p{
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 17px;
+}
+
+.container .poet .main-info .ashar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    padding-bottom:80px ;
+}
+
+.container .poet .main-info .ashar div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:40px 20px 50px;
+    border-radius: 2px;
+    width:100%;
+    background-color: #fff;
+    margin: 30px 0;
+    box-shadow: 0px 0px 11px 0px gray;
+}
+
+.container .poet .main-info .ashar div img{
+    height: 80px;
+    width: 80px;
+    mix-blend-mode:normal;
+    position: absolute;
+    top: -70px;
+    border: 10px solid white;
+}
+
+.container .poet .main-info .ashar div p{
+    text-align: center;
+    font-family:Noto Nastaliq urdu;
+    line-height: 40px;
+}
+
+.container .poet .main-info img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50% ;
+    margin-top: 40px;
+}
