@@ -1,147 +1,217 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <link rel="icon" href="./imges/thick.png" />
 
-    <link rel="icon" href="./imges/thick.png">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashar Nab</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Ashar Nab</title>
+    
 
     <!-- css link  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!---javascript link-->
-    <script src="style.js"></script>
+        <script src="style.js"></script>
 
     <!---ion-icon link-->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"   
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
     <!-- this part belongs to emailjs  -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function(){
+      (function () {
         emailjs.init("oaazgMppMr1E9SHcT");
-        })();
+      })();
     </script>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- this is the main container  -->
 
     <div class="container">
+      <!-- this part belongs to the header  -->
 
-        <!-- this part belongs to the header  -->
-
-        <header>
-            <div class="logo"><img src="./imges/logo.jpg"></div>
-            <div class="bar"><ion-icon name="menu-outline" title="bar" onclick="inc();"></ion-icon></div>
-        </header>
-
-        <!-- this belongs to the nav-bar part  -->
-
-        <div class="nav-bar" id="nav-bar">
-            <div class="logo">
-                <img src="./imges/logo.jpg">
-                <ion-icon name="close-outline" onclick="dec();"></ion-icon>
-            </div>
-            <nav class="links">
-                <ul>
-                    <li><a href="#menu" id="a"onclick="closeBar();">منو </a><ion-icon name="home-outline"></ion-icon></li>
-                    <li><a href="#about"onclick="closeBar();">در باره</a><ion-icon name="people-outline"></ion-icon></li>
-                    <li><a href="./Ashaar.html">شاعران</a><ion-icon name="book-outline"></ion-icon></li>
-                    <li><a href="#comment"onclick="closeBar();">ارایه نظر</a><ion-icon name="chatbubble-ellipses-outline"></ion-icon></li>
-                    <li><a href="#contact" onclick="closeBar();">ارتباط با ما</a><ion-icon name="call-outline"></ion-icon></li>
-                </ul>
-            </nav>
+      <header>
+        <div class="logo"><img src="./imges/logo.jpg" /></div>
+        <div class="bar">
+          <ion-icon name="menu-outline" title="bar" onclick="inc();"></ion-icon>
         </div>
-        <!-- this belongs to the content part  -->
+      </header>
 
-        <div class="content" id="menu">
-            <h2>به سایت اشعار <span style="color: #800080; font-family:Noto Nastaliq Urdu">ناب</span>
-            </h2>
-            <h2>خوش آمدید</h2>
+      <!-- this belongs to the nav-bar part  -->
+
+      <div class="nav-bar" id="nav-bar">
+        <div class="logo">
+          <img src="./imges/logo.jpg" />
+          <ion-icon name="close-outline" onclick="dec()"></ion-icon>
         </div>
+        <nav class="links">
+          <ul>
+            <li>
+              <a href="#menu" id="a" onclick="closeBar();">منو </a
+              ><ion-icon name="home-outline"></ion-icon>
+            </li>
+            <li>
+              <a href="#about" onclick="closeBar();">در باره</a
+              ><ion-icon name="people-outline"></ion-icon>
+            </li>
+            <li>
+              <a href="./Ashaar.html">شاعران</a
+              ><ion-icon name="book-outline"></ion-icon>
+            </li>
+            <li>
+              <a href="#comment" onclick="closeBar();">ارایه نظر</a
+              ><ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+            </li>
+            <li>
+              <a href="#contact" onclick="closeBar();">ارتباط با ما</a
+              ><ion-icon name="call-outline"></ion-icon>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- this belongs to the content part  -->
 
-        <!-- this part belongs to the about section  -->
+      <div class="content" id="menu">
+        <h2>
+          به سایت اشعار
+          <span style="color: #800080; font-family: Noto Nastaliq Urdu"
+            >ناب</span
+          >
+        </h2>
+        <h2>خوش آمدید</h2>
+      </div>
 
-        <div class="about" id="about">
-            <h2> درباره سایت</h2>
-            <p> به سایت اشعار ناب خوش آمدید ما در این سایت زندگی نامه و اشعار زیبای سه تن از شاعران نامدار فارسی زبان  را گنجانیده ایم امید که برای تان مفید واقع شود </p>
-            <div class="poets-pics">
-                <img src="./imges/m1.jpg">
-                <img src="./imges/s1.jpg">
-                <img src="./imges/a-1259.jpg">
-            </div>
+      <!-- this part belongs to the about section  -->
+
+      <div class="about" id="about">
+        <h2>درباره سایت</h2>
+        <p style="text-align: right">
+          به سایت اشعار ناب خوش آمدید ما در این سایت زندگی نامه و اشعار زیبای سه
+          تن از شاعران نامدار فارسی زبان را گنجانیده ایم امید که برای تان مفید
+          واقع شود
+        </p>
+        <div class="poets-pics">
+          <img src="./imges/m1.jpg" />
+          <img src="./imges/s1.jpg" />
+          <img src="./imges/a-1259.jpg" />
         </div>
+      </div>
 
-        <ion-icon id="upSide" name="arrow-up-outline"></ion-icon>
-
-        <div class="poets-main-info" id="poets">
-            <div>
-                <img src="./imges/m1.jpg" alt="">
-                <h2>مولانا</h2>
-                <div class="btns">
-                    <a href="./Ashaar.html#mashar"><button>اشعار</button></a>
-                    <a href="./Ashaar.html#movlana"><button>زندگینامه</button></a>
-                </div>
-            </div>
-            <div>
-                <img src="./imges/s1.jpg" alt="">
-                <h2>سعدی شیرازی</h2>
-                <div class="btns">
-                    <a href="./Ashaar.html#sashar"><button>اشعار</button></a>
-                    <a href="./Ashaar.html#sadi"><button>زندگینامه</button></a>
-                </div>
-            </div>
-            <div>
-                <img src="./imges/a-1259.jpg" alt="">
-                <h2>حافظ</h2>
-                <div class="btns">
-                    <a href="./Ashaar.html#hashar"><button>اشعار</button></a>
-                    <a href="./Ashaar.html#hafi"><button>زندگینامه</button></a>
-                </div>
-            </div>
+      <div class="poets-main-info" id="poets">
+        <div>
+          <img src="./imges/m1.jpg" alt="" />
+          <h2>مولانا</h2>
+          <div class="btns">
+            <a href="./Ashaar.html#mashar"><button>اشعار</button></a>
+            <a href="./Ashaar.html#movlana"><button>زندگینامه</button></a>
+          </div>
         </div>
-
-        <!-- this belongs to the comment section  -->
-
-        <div class="comment" id="comment">
-            <h2>نظریه تان در مورد سایت چگونه هست ؟</h2>
-            <div class="comment-div" onsubmit="return validation();">
-                <div class="comment-main">
-                    <input type="text"required id="name">
-                    <label> اسم تان</label>
-                </div>
-                <div class="comment-main">
-                    <input type="text" required id="com">
-                    <label> نظریه </label>
-                </div>
-                <input type="submit" value="ارسال" style="padding: 10px; border: none; border-radius: 4px;cursor: pointer;  margin: 15px 0;" id="submit-btn" onclick="sendMail();" onfocus="showMessage()">
-            </div> 
+        <div>
+          <img src="./imges/s1.jpg" alt="" />
+          <h2>سعدی شیرازی</h2>
+          <div class="btns">
+            <a href="./Ashaar.html#sashar"><button>اشعار</button></a>
+            <a href="./Ashaar.html#sadi"><button>زندگینامه</button></a>
+          </div>
         </div>
-
-        <!-- this belongs to the message  -->
-
-        <div class="message" id="message">
-            <img src="./imges/thick.png">
-            <h2>تشکر از نظر تان ما به نظریات شما رسیدگی خواهیم کرد</h2>
-            <button style="padding: 5px 25px ; background-color: #800080; color: #fff; border: none; border-radius: 3px; margin-top: 10px; font-size: 20px; " onclick="hideMessage();" onfocus="rest()"> تشکر </button>
+        <div>
+          <img src="./imges/a-1259.jpg" alt="" />
+          <h2>حافظ</h2>
+          <div class="btns">
+            <a href="./Ashaar.html#hashar"><button>اشعار</button></a>
+            <a href="./Ashaar.html#hafi"><button>زندگینامه</button></a>
+          </div>
         </div>
+      </div>
 
-        <footer id="contact">
-            <h2>ارتباط با ما</h2>
-            <ul>
-                <li><a href="https://m.facebook.com/ramin.jamal.75"><ion-icon name="logo-facebook" id="facebook"></ion-icon ></a></li>
-                <li><a href="https://instagram.com/_ramin_jamal?igshid=ZDc4ODBmNjlmNQ=="><ion-icon name="logo-instagram" id="instagram"></ion-icon></a></li>
-                <li><a href="https://www.youtube.com/channel/UCTVrDtVpPXJedCis4uhpUjQ"><ion-icon name="logo-youtube" id="youtube"></ion-icon></a></li>
-                <li><a href="https://twitter.com/Ramin61787752"><ion-icon name="logo-twitter" id="twetter"></ion-icon></a></li>
-            </ul>
-        </footer>
+      <!-- this belongs to the comment section  -->
 
+      <div class="comment" id="comment">
+        <h2>نظریه تان در مورد سایت چگونه هست ؟</h2>
+        <div class="comment-div" onsubmit="return validation();">
+          <div class="comment-main">
+            <input type="text" required id="name" />
+            <label> اسم تان</label>
+          </div>
+          <div class="comment-main">
+            <input type="text" required id="com" />
+            <label> نظریه </label>
+          </div>
+          <input
+            type="submit"
+            value="ارسال"
+            style="
+              padding: 10px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              margin: 15px 0;
+            "
+            id="submit-btn"
+            onclick="sendMail();"
+            onfocus="showMessage()"
+          />
+        </div>
+      </div>
+
+      <!-- this belongs to the message  -->
+
+      <div class="message" id="message">
+        <img src="./imges/thick.png" />
+        <h2>تشکر از نظر تان ما به نظریات شما رسیدگی خواهیم کرد</h2>
+        <button
+          style="
+            padding: 5px 25px;
+            background-color: #800080;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            margin-top: 10px;
+            font-size: 20px;
+          "
+          onclick="hideMessage();"
+          onfocus="rest()"
+        >
+          تشکر
+        </button>
+      </div>
+
+      <footer id="contact">
+        <h2>ارتباط با ما</h2>
+        <ul>
+          <li>
+            <a href="https://m.facebook.com/ramin.jamal.75"
+              ><ion-icon name="logo-facebook" id="facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/_ramin_jamal?igshid=ZDc4ODBmNjlmNQ=="
+              ><ion-icon name="logo-instagram" id="instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCTVrDtVpPXJedCis4uhpUjQ"
+              ><ion-icon name="logo-youtube" id="youtube"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Ramin61787752"
+              ><ion-icon name="logo-twitter" id="twetter"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
