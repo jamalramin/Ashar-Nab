@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Image into Divs</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Define the URL of the image you want to insert
+            var imageUrl = "https://example.com/your-image.jpg"; // Replace with your image URL
+
+            // Get all div elements
+            var divs = document.querySelectorAll("div");
+
+            // Loop through each div
+            divs.forEach(function(div) {
+                // Create a new img element
+                var img = document.createElement("img");
+                // Set the src attribute to the image URL
+                img.src = imageUrl;
+                // Optionally, set alt text for the image
+                img.alt = "Description of the image";
+                // Append the img element to the div
+                div.appendChild(img);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="example">This is div 1.</div>
+    <div class="example">This is div 2.</div>
+    <div class="example">This is div 3.</div>
+</body>
+</html>
