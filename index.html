@@ -3,6 +3,8 @@
   <head>
     <link rel="icon" href="./imges/8i9zzG-LogoMakr.png">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>Ashar Nab</title>
@@ -36,6 +38,14 @@
     </script>
   </head>
   <body>
+
+    <!-- this is the onscrool effect github link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
     <!-- this is the main container  -->
 
     <div class="container">
@@ -110,7 +120,7 @@
       </div>
 
       <div class="poets-main-info" id="poets">
-        <div>
+        <div data-aos="fade-in">
           <img src="./imges/m1.jpg" alt="" />
           <h2>مولانا</h2>
           <div class="btns">
@@ -119,7 +129,7 @@
           </div>
         </div>
         
-        <div>
+        <div data-aos="fade-left">
           <img src="./imges/s1.jpg" alt="" />
           <h2>سعدی شیرازی</h2>
           <div class="btns">
@@ -127,7 +137,7 @@
             <a href="./Ashaar.html#sadi"><button>زندگینامه</button></a>
           </div>
         </div>
-        <div>
+        <div data-aos="fade-right">
           <img src="./imges/a-1259.jpg" alt="" />
           <h2>حافظ</h2>
           <div class="btns">
@@ -135,7 +145,7 @@
             <a href="./Ashaar.html#hafi"><button>زندگینامه</button></a>
           </div>
         </div>
-        <div>
+        <div data-aos="slide-up">
           <img src="./imges/ferdawsi.jpg" alt="" />
           <h2>فردوسی</h2>
           <div class="btns">
@@ -147,7 +157,7 @@
 
       <!-- this belongs to the comment section  -->
 
-      <div class="comment" id="comment">
+      <div class="comment" id="comment" data-aos="fade-out">
         <h2>نظریه تان در مورد سایت چگونه هست ؟</h2>
         <div class="comment-div" onsubmit="return validation();">
           <div class="comment-main">
