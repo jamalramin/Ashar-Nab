@@ -134,6 +134,8 @@ body {
 
 .container .about {
   display: flex;
+  align-items:center;
+  justify-content:center;
   flex-direction: column;
   background-color: #800080;
   padding: 80px 34px 50px;
