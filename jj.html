@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="changeImage()">
+    
+    <script>
+                var i = 0
+                var images = []
+                var time = 3000
+
+               images [0] ='./imges/m1.jpg'
+               images [1] ='./imges/s1.jpg'
+
+                function changeImage(){
+                    document.slide.src= images[i]
+
+                    if( i < images.length - 1){
+                        i++
+                    }
+                    else{
+                        i = 0
+                    }
+
+                     setTimeout('changeImage()' , time)
+                }
+    </script>
+
+    <img name="slide" height="400" width="400px">
+
+</body>
+</html>

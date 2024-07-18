@@ -50,4 +50,46 @@ function rest(){
 
     document.getElementById("submit-btn").value = "ارسال";
 }
+   
+// 
+// var i = 0
+// var images = []
+// var time = 2000
+// images [0] = "./imges/m1.jpg"
+// images [1] = "./imges/s1.jpg"
+// images [2] = "./imges/a-1259.jpg"
+// images [3] = "./imges/ferdawsi.jpg"
+// function slideImage(){
 
+//     document.slide.src = "images[i]"
+
+//     if(i < images.length - 1){
+//         i++
+//     }
+//     else {
+//         i = 0
+//     }
+//     setTimeout("slideImage" , time)
+
+// }
+
+var i = 0
+                var images = []
+                var time = 3000
+
+             images [0] = "./imges/m1.jpg"
+images [1] = "./imges/s1.jpg"
+images [2] = "./imges/a-1259.jpg"
+images [3] = "./imges/ferdawsi.jpg"
+                function changeImage(){
+                    document.slide.src= images[i]
+
+                    if( i < images.length - 1){
+                        i++
+                    }
+                    else{
+                        i = 0
+                    }
+
+                     setTimeout('changeImage()' , time)
+                }
