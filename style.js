@@ -16,6 +16,7 @@ function showMessage(){
     mes.style.transitionDelay = "2s";
     mes.style.transform = "scale(1)";
     mes.style.transitionDuration = "0.8s";
+    // document.getElementById("runner-convas")
 }
 
 function hideMessage(){

@@ -134,8 +134,8 @@ body {
 
 .container .about {
   display: flex;
-  align-items:center;
-  justify-content:center;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-color: #800080;
   padding: 80px 34px 50px;
@@ -438,6 +438,14 @@ footer ul li ion-icon {
 
 #twetter {
   color: #1da1f2;
+}
+
+#whatsapp {
+  color: #25d336;
+}
+
+#email {
+  color: rgb(102, 167, 189);
 }
 
 /* this part belongs to the ashar section  */
