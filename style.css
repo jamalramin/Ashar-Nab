@@ -541,6 +541,5 @@ footer ul li ion-icon {
   .container {
     /* width: 400px; */
     overflow: hidden;
-    display:flex;
   }
 }
