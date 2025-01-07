@@ -14,7 +14,6 @@ body {
 
 .container {
   position: relative;
-  display:none;
 }
 
 .container header {
@@ -542,4 +541,17 @@ footer ul li ion-icon {
     /* width: 400px; */
     overflow: hidden;
   }
+
+  .not-available {
+        display: flex; /* Show the 'not available' message */
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+        background-color: lightcoral;
+        color: white;
+        margin: 0;padding: 0;
+        font-size: 20px;
+      }
 }
