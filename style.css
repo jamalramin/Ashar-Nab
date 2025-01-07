@@ -548,7 +548,7 @@ footer ul li ion-icon {
   }
 
   .not-available {
-        display: flex; /* Show the 'not available' message */
+        display: none; /* Show the 'not available' message */
         padding: 20px;
         justify-content: center;
         align-items: center;
