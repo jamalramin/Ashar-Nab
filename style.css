@@ -14,6 +14,7 @@ body {
 
 .container {
   position: relative;
+  display:none;
 }
 
 .container header {
@@ -540,5 +541,6 @@ footer ul li ion-icon {
   .container {
     /* width: 400px; */
     overflow: hidden;
+    display:flex;
   }
 }
