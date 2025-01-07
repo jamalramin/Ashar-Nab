@@ -16,6 +16,10 @@ body {
   position: relative;
 }
 
+  .not-available {
+    display:none;
+  }
+
 .container header {
   display: flex;
   justify-content: space-between;
@@ -540,6 +544,7 @@ footer ul li ion-icon {
   .container {
     /* width: 400px; */
     overflow: hidden;
+    display:none;
   }
 
   .not-available {
