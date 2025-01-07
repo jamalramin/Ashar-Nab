@@ -544,7 +544,7 @@ footer ul li ion-icon {
   .container {
     /* width: 400px; */
     overflow: hidden;
-    display:flex;
+    display:none;
   }
 
   .not-available {
