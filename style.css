@@ -17,7 +17,7 @@ body {
 }
 
   .not-available {
-    display:none;
+    display:block;
   }
 
 .container header {
