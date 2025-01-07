@@ -526,7 +526,7 @@ footer ul li ion-icon {
   margin-top: 40px;
 }
 
-@media  screen and  (max-width:415px){
+@media  screen and  (min-width:415px){
   #slide{display: flex;
   border-radius: 50%;}
 
